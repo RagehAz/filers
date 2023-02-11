@@ -20,7 +20,7 @@ class Filers {
     bool useTemporaryDirectory = true,
   }) async {
 
-    final String _filePath = await _createNewFilePath(
+    final String _filePath = await createNewFilePath(
       fileName: fileName,
       useTemporaryDirectory: useTemporaryDirectory,
     );
@@ -64,7 +64,7 @@ class Filers {
 
   // --------------------
   /// TESTED : WORKS PERFECT
-  static Future<String> _createNewFilePath({
+  static Future<String> createNewFilePath({
     @required String fileName,
     bool useTemporaryDirectory = true,
   }) async {
