@@ -296,7 +296,6 @@ class Filers {
 
       /// call http.get method and pass imageUrl into it to get response.
       final http.Response _response = await Rest.get(
-        context: null,
         rawLink: url,
         // timeout: 60,
         invoker: 'getFileFromURL',
